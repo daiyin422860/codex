@@ -1,0 +1,17 @@
+[project]
+name = "interactive-python-app"
+version = "0.1.0"
+description = "A small Python app scaffold for interactive development."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+interactive-app = "interactive_python_app.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.setuptools.packages.find]
+where = ["src"]
